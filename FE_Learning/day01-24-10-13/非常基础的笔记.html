@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端学习笔记</title>
+</head>
+<body>
+    <!-- 给用户看的部分 -->
+    <!-- ctrl+/可以表示注释 -->
+    
+    <!-- 标题可以有1-6级标题 -->
+    <h1>一级标题</h1>
+    <!-- 一般一级标题只用一次(这是规范,不是语法) -->
+    <h2>二级标题</h2>
+
+    <!-- <br>换行符号 -->
+    <!-- <hr>水平线 -->
+
+    第一行内容
+    这一句并不会换行
+    <br>换行后的内容.....下面是水平线
+    <hr>
+
+    <h2>文本格式化标签</h2>
+    <!-- 优先用前面的那一组 -->
+    <br>
+    <strong>加粗</strong>  <b>也可以加粗</b><br>
+    <em>倾斜</em>   <i>也可以倾斜</i><br>
+    <ins>下划线</ins>    <u>也可以下划</u><br>
+    <del>删除线</del>   <s>也可以删除</s><br>
+
+    <h2>图像标签</h2>
+    <!-- <img src="图片的URL" alt="当图片显示错误的时候,展示alt内的文字" 
+        title="鼠标悬停在图片上显示的文字"> -->
+    <img src="../img/就吹黑猴.avif" alt="就吹黑猴" title="就吹黑猴"><br>
+    <!-- 浏览器缩放图片,默认是等比缩放 -->
+    <img src="../img/我来助你.avif" width="100"><br>
+    <img src="../img/我来助你.avif" height="200"><br>
+    <img src="../img/我来助你.avif" width="100" height="200"><br>
+
+
+    <h2>路径</h2>
+    相对路径从<strong>当前文件位置</strong>出发查找目标文件<br>
+    .表示当前目录,..表示上一级目录
+    <!-- 图片的在线网址也是一种绝对路径 -->
+    <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度首页图">
+    
+    <h2>超链接标签</h2>
+    <!-- a+回车 -->
+    <a href="https:/www.baidu.com">跳转到百度</a>   <br>
+    <a href="../img/我来助你.avif">跳转到本地,使用相对路径</a>   <br>
+
+    <!-- 新建网页打开: 超链接后加target="_blank"-->
+    <a href="https:/www.baidu.com" target="_blank">新建页面,跳转到百度</a> <br>
+
+    <!-- 开发初期，不知道超链接的跳转地址，href属性值写#，表示空链接，不会跳转 -->
+    <a href="#">重新进入到当前页面</a>   <br>
+    <a href="#" target="_blank">新建当前页面</a>
+
+    <h2>多媒体标签:音频和视频</h2>
+    音频标签
+    <!-- src存的是路径(浏览器默认不播放)  controls显示音频控制面板  
+        loop是循环播放 autoplay是自动播放(浏览器一般会禁用掉) -->
+    <audio src="../media/music.mp3" controls loop></audio>   <br>
+    <!-- <audio src="../media/music.mp3" autoplay ></audio> -->
+
+    视频标签
+    <!-- src存的是路径(浏览器默认不播放)  controls显示控制面板  
+        loop循环播放 muted静音播放 autoplay自动播放(浏览器仅支持在静音状态下自动播放) -->
+    <video src="../media/vue.mp4" controls loop muted autoplay></video>
+
+
+</body>
+</html>
