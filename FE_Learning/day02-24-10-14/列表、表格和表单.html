@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表、表格和表单</title>
+</head>
+<body>
+    <h1>列表、表格和表单</h1>
+
+    <h2>列表</h2>
+
+    <h2>表格</h2>
+    <!-- table 嵌套 tr tr嵌套td/th -->
+    <!-- table表格 tr行 td表头 th内容 -->
+    <!-- 表格默认没有边框线，使用border属性可以添加 -->
+    <!-- 表格结构标签：thead表格头部 tbody表格主体 tfoot表格底部-->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th>张三</th>
+                <th>99</th>
+                <th>100</th>
+                <th>199</th>
+            </tr>
+    
+            <tr>
+                <th>李四</th>
+                <th>98</th>
+                <th>100</th>
+                <th>198</th>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>总结</th>
+                <th>全市第一</th>
+                <th>全市第一</th>
+                <th>全市第一</th>
+            </tr>
+        </tfoot>
+
+        
+    </table>
+
+    <h2>合并单元格</h2>
+    跨行合并、跨列合并
+    <!-- 合并后的单元格保留最左最上的信息，添加属性取值是数字，表示需要合并的单元格的数量 -->
+    <!-- rowspan跨行合并（保留最上单元格）  colspan跨列合并（保留最左单元格） 删除或注释掉多余的单元格-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th>张三</th>
+                <th>99</th>
+                <th rowspan="2">100</th>
+                <th>199</th>
+            </tr>
+    
+            <tr>
+                <th>李四</th>
+                <th>98</th>
+                <!-- <th>100</th> -->
+                <th>198</th>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>总结</th>
+                <th colspan="3">全市第一</th>
+                <!-- <th>全市第一</th>
+                <th>全市第一</th> -->
+            </tr>
+        </tfoot>
+
+        
+    </table>
+
+</body>
+</html>
