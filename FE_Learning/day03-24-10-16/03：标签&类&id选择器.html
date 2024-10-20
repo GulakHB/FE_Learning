@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器：标签和类</title>
+</head>
+<body>
+    <!-- 标签选择器(上一节使用的均是标签选择器)：使用标签名作为选择器，选中的同名标签设置相同的样式 -->
+    <!-- 缺点:无法差异化同名标签的样式 -->
+
+    类选择器的作用:查找标签,差异化设置标签的显示效果<br>
+    步骤:
+    <ul>
+        <li>1.定义:类选择器 -> 类名</li>
+        <li>2.使用:类选择器 -> 标签添加class="类名"</li>
+    </ul>
+
+    <style>
+        /* 下面两个是类选择器 */
+        .red{
+            color: red;
+        }
+        .size30{
+            font-size: 30px;
+        }
+        /* 下面两个是id选择器 */
+        #blue{
+            color: blue;
+        }
+        #size40{
+            font-size: 40px;
+        }
+
+    </style>
+
+    <p class="red">这是第一个p标签   设置为红色正常字体</p>
+    <p class="size30">这是第二个p标签   设置为30px字体</p>
+    <div class="red size">这是第三个标签  设置为红色30px字体</div>
+
+    id选择器的作用:查找标签,差异化设置标签的显示效果<br>
+    与类选择器不同的是,id选择器一般配合JavaScrip使用,很少来设置CSS样式
+    步骤:
+    <ul>
+        <li>1.定义:id选择器 -> id名</li>
+        <li>2.使用:is选择器 -> 标签添加id="id名"</li>
+    </ul>
+
+    <p id="blue">这是第四个p标签   设置为蓝正常字体</p>
+    <p id="size40">这是第五个p标签   设置为40px字体</p>
+
+
+
+
+
+</body>
+</html>
